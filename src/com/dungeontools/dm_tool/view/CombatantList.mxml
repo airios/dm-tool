@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/halo"
+		 xmlns:view="com.dungeontools.dm_tool.view.*">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<s:Panel title="Combatant List" enabled="false">
+		<mx:DataGrid
+			id="dg_characters" 
+			x="0" 
+			y="0" 
+			width="503" 
+			height="673" 
+			sortableColumns="false" 
+			doubleClickEnabled="true">
+			<mx:columns>
+				<mx:DataGridColumn headerText="ID" width="40"/>
+				<mx:DataGridColumn headerText="Name" dataField="Name"/>
+				<mx:DataGridColumn headerText="Health"/>
+				<mx:DataGridColumn headerText="Status"/>
+				<mx:DataGridColumn headerText="Turn" dataField="Turn"/>
+				<mx:DataGridColumn headerText="Sequence"/>
+				<mx:DataGridColumn headerText="Int" dataField="InitiativeTotal"/>
+			</mx:columns>
+		</mx:DataGrid>
+	</s:Panel>
+</s:Group>

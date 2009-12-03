@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
+					   xmlns:s="library://ns.adobe.com/flex/spark" 
+					   xmlns:mx="library://ns.adobe.com/flex/halo"
+					   xmlns:dmtool="com.dungeontools.dm_tool.*" 
+					   xmlns:view="com.dungeontools.dm_tool.view.*"
+					   height="800" 
+					   width="1300"
+					   x="0"
+					   y="0">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+		<dmtool:DmToolContext contextView="{this}"/>
+	</fx:Declarations>
+	
+	<s:Panel id="pnl_dm_tool" x="10" y="10" width="1265" height="753" title="DungeonMasterTool - DungeonTools.com">
+		<view:MenuBar x="0" y="0" width="1264"/>
+		<view:CombatantList x="415" y="30"/>
+		<view:Actions x="10" y="151"/>
+		<view:ChangeHealth x="10" y="30"/>
+		<view:CombatantInformation x="926" y="30"/>
+		<view:ActiveEffects x="926" y="238"/>
+		<view:CommentsAndNotes x="926" y="579"/>
+		<view:EffectCreation x="10" y="304"/>
+	</s:Panel>
+	
+</s:WindowedApplication>

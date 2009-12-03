@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menuitem label="File">
+    <!--<menuitem label="Save Party" data="saveparty"/>-->
+    <!--<menuitem label="Load Party" data="loadparty"/>-->
+    <!--<menuitem type="separator"/>  -->
+    <!--<menuitem label="Save Encounter" data="saveencounter"/>-->
+    <!--<menuitem label="Load Encounter" data="loadencounter"/>-->
+    <!--<menuitem type="separator"/>  -->
+    <!--<menuitem label="Save Combat" data="savecombat"/>-->
+    <!--<menuitem label="Load Combat" data="loadcombat"/>-->
+    <menuitem type="separator"/>
+    <menuitem label="Add Combatants" data="addcombatants"/>
+    <menuitem label="Import Character" data="importcharacter"/>
+</menuitem>
+<menuitem label="Combat">
+    <!--<menuitem label="Go to First" data="gotofirst"/>-->
+    <menuitem label="Start Combat" data="startcombat"/>
+    <menuitem label="End Combat" data="endcombat"/>
+    <!--<menuitem type="separator"/>-->
+    <!--<menuitem label="Rest" data="rest"/>-->
+    <!--<menuitem label="Extended Rest" data="extendedrest"/>-->
+    <menuitem type="separator"/>  
+    <menuitem label="Clear Monsters" data="clearmonsters"/>
+    <menuitem label="Clear Party" data="clearparty"/>
+    <menuitem label="Clear All" data="clearall"/>
+</menuitem>
+<!--<menuitem label="History">-->
+<!--</menuitem>-->
