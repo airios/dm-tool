@@ -1,6 +1,7 @@
 package com.dungeontools.dm_tool
 {
-	import com.dungeontools.dm_tool.view.*;
+	import com.dungeontools.dm_tool.view.component.*;
+	import com.dungeontools.dm_tool.view.mediator.*;
 	
 	import flash.display.DisplayObjectContainer;
 	
