@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/halo">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<s:Panel x="0" y="0" width="309" height="333" title="Active Effects">
+		<mx:DataGrid id="dg_active_effects" x="10" y="10" width="269" height="243">
+			<mx:columns>
+				<mx:DataGridColumn headerText="Source" dataField="col1"/>
+				<mx:DataGridColumn headerText="End" dataField="col2"/>
+				<mx:DataGridColumn headerText="Description" dataField="col3"/>
+			</mx:columns>
+		</mx:DataGrid>
+		<s:Button x="10" y="261" label="Sustain" width="85" enabled="false"/>
+		<s:Button x="102" y="261" label="Cancel Effect" width="113" enabled="false"/>
+	</s:Panel>
+</s:Group>

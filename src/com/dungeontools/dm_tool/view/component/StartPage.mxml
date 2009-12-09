@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/halo" 
+		 width="100%"
+		 height="100%"
+		 backgroundColor="#000000"
+		 backgroundAlpha="0.9">
+	<fx:Script>
+		<![CDATA[
+			import com.dungeontools.dm_tool.event.StartPageEvent;
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<mx:Form 
+		verticalCenter="0"
+		horizontalCenter="0"
+		backgroundAlpha="1.0"
+		backgroundColor="#FFFFFF"
+		cornerRadius="16"
+		borderStyle="solid"
+		defaultButton="{btnNewCampaign}"
+		borderThickness="0"
+		x="202" 
+		y="140">
+		
+		<mx:HBox>
+			<s:Button id="btnNewCampaign" label="New Campaign" click="dispatchEvent(new StartPageEvent(StartPageEvent.NEW_CAMPAIGN));"/>
+			<s:Button id="btnLoadCampaign" label="Load Campaign" click="dispatchEvent(new StartPageEvent(StartPageEvent.LOAD_CAMPAIGN));"/>
+		</mx:HBox>
+	</mx:Form>
+</mx:Canvas>

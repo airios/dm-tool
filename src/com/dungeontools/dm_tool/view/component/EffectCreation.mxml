@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/halo">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+		<fx:XML id="effectDurations" source="com/dungeontools/dm_tool/data/effectDurations.xml"/>
+	</fx:Declarations>
+	<s:states>
+		<s:State name="Any"/>
+		<s:State name="Mark"/>
+	</s:states>
+	
+	<s:Panel x="0" y="0" width="397" height="399" title="Effect Creation">
+		<s:Label x="10" y="10" text="Effect"/>
+		<mx:ComboBox id="charComboBox" x="76" y="8" width="266"/>
+		<mx:ComboBox x="76" y="31" width="69" labelField="@label">
+			<mx:dataProvider>
+				<fx:XMLList xmlns="">
+					<item label="Any" data="0"/>
+					<item label="Mark" data="1"/>
+				</fx:XMLList>
+				<!--<fx:Array>
+					<fx:Object label="Any" data="0"/>
+					<fx:Object label="Mark" data="1"/>
+				</fx:Array>-->
+			</mx:dataProvider>
+		</mx:ComboBox>
+		<mx:ComboBox x="76" y="57" width="266" dataProvider="{effectDurations}" labelField="@label">
+		</mx:ComboBox>
+		<s:Label x="10" y="33" text="Condition"/>
+		<s:Label x="10" y="59" text="Duration"/>
+		<s:TextInput x="153" y="31" width="189" id="textinput1" includeIn="Any"/>
+		<s:CheckBox x="76" y="87" label="Beneficial"/>
+		<s:Button x="164" y="87" label="Add" width="85"/>
+		<s:Button x="257" y="87" label="Clear" width="85"/>
+		<mx:ComboBox x="164" y="31" width="60" labelField="ID" includeIn="Mark">
+		</mx:ComboBox>
+		<s:CheckBox x="232" y="31" label="Can't be superseded" includeIn="Mark"/>
+		<s:Label x="146" y="33" text="By" includeIn="Mark"/>
+	</s:Panel>
+</s:Group>

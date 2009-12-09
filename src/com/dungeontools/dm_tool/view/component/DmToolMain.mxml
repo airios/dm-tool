@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		   xmlns:s="library://ns.adobe.com/flex/spark" 
+		   xmlns:mx="library://ns.adobe.com/flex/halo"
+		   xmlns:dmtool="com.dungeontools.dm_tool.*" 
+		   xmlns:view="com.dungeontools.dm_tool.view.*" xmlns:ns="com.dungeontools.dm_tool.view.component.*">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	
+	<s:states>
+		<s:State name="DmToolMainStartup"/>
+		<s:State name="DmToolMainNormal"/>
+	</s:states>
+	
+	<s:Panel id="pnl_dm_tool" x="10" y="10" width="1265" height="753" title="DungeonMasterTool - DungeonTools.com">
+		<ns:StartPage includeIn="DmToolMainStartup"/>
+		
+		<ns:MenuBar x="0" y="0" width="1264"/>
+		<ns:CombatantList x="415" y="30" height="673" includeIn="DmToolMainNormal"/>
+		<ns:Actions x="10" y="151" includeIn="DmToolMainNormal"/>
+		<ns:ChangeHealth x="10" y="30" includeIn="DmToolMainNormal"/>
+		<ns:CombatantInformation x="926" y="30" includeIn="DmToolMainNormal"/>
+		<ns:ActiveEffects x="926" y="238" includeIn="DmToolMainNormal"/>
+		<ns:CommentsAndNotes x="926" y="579" includeIn="DmToolMainNormal"/>
+		<ns:EffectCreation x="10" y="304" includeIn="DmToolMainNormal"/>
+	</s:Panel>
+</s:Group>

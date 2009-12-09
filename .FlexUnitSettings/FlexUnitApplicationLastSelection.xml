@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="" >
+<testsuite  name="Default Test Suite" project="dm-tool">
+<testsuite name="com.dungeontools.dm_tool:MyTests" type="testsuiteclass"/>
+<testsuite name="com.dungeontools.dm_tool:YourMom" type="testcaseclass"/>
+</testsuite>
+</testrun>
