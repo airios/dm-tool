@@ -18,7 +18,7 @@ package com.dungeontools.dm_tool.view.mediator
 		
 		override public function onRegister():void
 		{
-			trace("StartPageMediator:onRegister()");
+//			trace("StartPageMediator:onRegister()");
 			eventMap.mapListener(startPage, StartPageEvent.NEW_CAMPAIGN, newCampaign);
 			eventMap.mapListener(startPage, StartPageEvent.LOAD_CAMPAIGN, loadCampaign);
 		}
@@ -26,7 +26,8 @@ package com.dungeontools.dm_tool.view.mediator
 		private function newCampaign(e:StartPageEvent):void
 		{
 			trace("StartPageMediator:newCampaign()");
-			dispatch(new StateChangeEvent(StateChangeEvent.CHANGE_STATE, "DmToolMainNormal"));
+			
+			eventDispatcher.dispatchEvent(new StateChangeEvent(StateChangeEvent.CHANGE_STATE, "DmToolMainNormal"));
 		}
 		
 		private function loadCampaign(e:StartPageEvent):void

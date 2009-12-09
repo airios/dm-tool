@@ -20,6 +20,8 @@ package com.dungeontools.dm_tool
 			// Model
 			// Services
 			// View
+			mediatorMap.mapView(DmToolMain, DmToolMainMediator);
+			mediatorMap.mapView(StartPage, StartPageMediator);
 			mediatorMap.mapView(CombatantList, CombatantListMediator);
 			mediatorMap.mapView(MenuBar, MenuBarMediator);
 			mediatorMap.mapView(Actions, ActionsMediator);
