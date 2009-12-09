@@ -4,7 +4,7 @@
 		 xmlns:mx="library://ns.adobe.com/flex/halo">
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
-		<fx:XML id="effectDurations" source="com/dungeontools/dm_tool/data/effectDurations.xml"/>
+		<fx:XML id="effectDurations" source="com/dungeontools/dm_tool/data/effectDurations.xml" />
 	</fx:Declarations>
 	<s:states>
 		<s:State name="Any"/>
@@ -21,12 +21,12 @@
 					<item label="Mark" data="1"/>
 				</fx:XMLList>
 				<!--<fx:Array>
-					<fx:Object label="Any" data="0"/>
-					<fx:Object label="Mark" data="1"/>
+				<fx:Object label="Any" data="0"/>
+				<fx:Object label="Mark" data="1"/>
 				</fx:Array>-->
 			</mx:dataProvider>
 		</mx:ComboBox>
-		<mx:ComboBox x="76" y="57" width="266" dataProvider="{effectDurations}" labelField="@label">
+		<mx:ComboBox x="76" y="57" width="266" dataProvider="{effectDurations.effectDuration}" labelField="@label">
 		</mx:ComboBox>
 		<s:Label x="10" y="33" text="Condition"/>
 		<s:Label x="10" y="59" text="Duration"/>

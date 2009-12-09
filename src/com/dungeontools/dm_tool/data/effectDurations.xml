@@ -1,10 +1,12 @@
-<effectDuration label="End of source's next turn" data="0"/>
-<effectDuration label="End of source's next turn, sustain" data="1"/>
-<effectDuration label="Start of source's next turn" data="2"/>
-<effectDuration label="End of encounter" data="3"/>
-<effectDuration label="Stance" data="4"/>
-<effectDuration label="Save end" data="5"/>
-<effectDuration label="Save end (Special)" data="6"/>
-<effectDuration label="Other" data="7"/>
-<effectDuration label="End of target's next turn" data="8"/>
-<effectDuration label="Start of target's next turn" data="9"/>
+<effects>
+	<effectDuration label="End of source's next turn" data="0"/>
+	<effectDuration label="End of source's next turn, sustain" data="1"/>
+	<effectDuration label="Start of source's next turn" data="2"/>
+	<effectDuration label="End of encounter" data="3"/>
+	<effectDuration label="Stance" data="4"/>
+	<effectDuration label="Save end" data="5"/>
+	<effectDuration label="Save end (Special)" data="6"/>
+	<effectDuration label="Other" data="7"/>
+	<effectDuration label="End of target's next turn" data="8"/>
+	<effectDuration label="Start of target's next turn" data="9"/>
+</effects>
